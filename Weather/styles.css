@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+}
+
+.grid-page{
+    display: grid;
+    grid-template-columns: 50% 50% auto auto;
+	grid-template-rows: auto auto;
+    grid-template-areas: "header header" "content content2" "footer footer";
+}
+
+
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.content {					
+    grid-area: content;
+    text-align: center;
+    float: left;
+    background-color: lightgoldenrodyellow;
+}
+
+.content2 {
+    grid-area: content2;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+.footer {
+    grid-area: footer;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    background-color: lightblue;
+}
+
